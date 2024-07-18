@@ -4,6 +4,14 @@ layout: default
 
 # Rules
 
+* <p style='text-align: justify;'> Each submission will be ranked individually for each task, with the top 10 submissions with the highest score per task receiving scores from 10 to 1. The score of each task is calculated as the average score of the three models for the first track. For the second track, the score is the score of the submitted model. </p>
+
+* <p style='text-align: justify;'> We will measure the models' throughput on a smartphone platform provided by the sponsor. Submissions will be ranked based on throughput. To emphasize the importance of inference speed, the score for the throughput task will be <b>doubled</b>, ranging from 20 to 2 for the top 10 submissions. To assist participants in improving the speed of their models, we will provide an easy-to-run pipeline to measure throughput on a GPU, where the throughput values are roughly scaled to those on the smartphone platform.</p>
+
+* <p style='text-align: justify;'> We will measure the inference memory usage of all models. Submissions with models that exceed 12GB of memory usage for inference will be disqualified.</p>
+
+* <p style='text-align: justify;'> The final rank of submissions will be determined by the sum of scores across all evaluation tasks including seven diverse tasks as shown in the Table below (100 scores in total), maximum 70 scores, one secret holdout task (maximum 10 scores), and the throughput measurement (maximum 20 scores). </p>
+
 ## Protocol
 
 <p style='text-align: justify;'>
