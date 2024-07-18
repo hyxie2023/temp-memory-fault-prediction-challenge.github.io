@@ -19,7 +19,7 @@ author:
 navigation:
   Home: "index"
   # Challenge: "challenge"
-  Rules: "_rules"
+  Rules: "rules"
   Timeline: "dates"
   Prizes: "prizes"
   # Starting Kit: "starter_kit"
