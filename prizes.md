@@ -14,4 +14,4 @@ layout: default
 <p style='text-align: justify;'>Best Paper award: two teams, <b>$1000</b> for each.</p>
 
 <p style='text-align: justify;'> Participants will receive a certificate of participation. Winners will be invited to give talks at the
-workshop. Academic/industry leaders will be invited as keynote speakers for the day of the workshop.</p>
+workshop. Academic/industry leaders will be invited as keynote speakers for the day of the workshop..</p>
