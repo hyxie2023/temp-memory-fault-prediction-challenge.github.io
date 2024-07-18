@@ -12,7 +12,7 @@ layout: default
 
 * <p style='text-align: justify;'> The final rank of submissions will be determined by the sum of scores across all evaluation tasks including seven diverse tasks as shown in the Table below (100 scores in total), maximum 70 scores, one secret holdout task (maximum 10 scores), and the throughput measurement (maximum 20 scores). </p>
 
-## Protocol
+# Protocol
 
 <p style='text-align: justify;'>
 We will consider using and will conduct beta testing of fully fledged platforms such as Codalab or Huawei Cloud Competition for hosting the competition. Alternatively, we may use online forms on the website for registration and submissions. Participants will follow the outlined steps to register for the competition:
