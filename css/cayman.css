@@ -355,6 +355,7 @@ a:hover {
   background-image: url('../assets/mount_image.jpg');
   background-size: cover;
   background-position: center;
+  color: black;
 }
 
 @media screen and (min-width: 64em) {
