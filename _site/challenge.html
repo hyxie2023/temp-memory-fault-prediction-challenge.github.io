@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang=" en-US">
+
+<head>
+
+  
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style"
+    type="text/css" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"
+    integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"
+    integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx"
+    crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+  <link rel="stylesheet" href="/edge-llm-challenge.github.io/css/cayman.css?v=">
+  <style type="text/css">
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #fdfdff;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">Edge-Device Large Language Model Competition</h1>
+    <h2 class="project-tagline">NeurIPS 2024 Challenge</h2>
+    
+    <a href="index" class="btn">Home</a>
+    
+    <a href="challenge" class="btn">Challenge</a>
+    
+    <a href="rules" class="btn">Rules</a>
+    
+    <a href="dates" class="btn">Timeline</a>
+    
+    <a href="prizes" class="btn">Prizes</a>
+    
+    <a href="starter_kit" class="btn">Starting Kit</a>
+    
+    <a href="registration" class="btn">Registration</a>
+    
+    <a href="feedback" class="btn">Feedback</a>
+    
+    <a href="leaderboard" class="btn">Leaderboard</a>
+    
+    <a href="organizers" class="btn">Organizers</a>
+    
+    <a href="schedule" class="btn">Workshop</a>
+    
+    <a href="sponsors" class="btn">Sponsors</a>
+    
+    <a href="question" class="btn">Q&A</a>
+    
+
+  </header>
+
+  <main id="content" class="main-content" role="main">
+    <h1 id="tracks">Tracks</h1>
+
+<p style="text-align: justify;">
+<b> 1. Compression Challenge:</b> teams are tasked with developing their own compression methods to compress three pre-trained LLMs individually: Phi-2, Llama-3-8B, and Qwen-7B. Each model submitted must be capable of running on a smartphone device with 12 GB DRAM. Each model will be evaluated on a subset of the OpenCompass benchmark, which comprehensively assesses LLMs across multiple fundamental dimensions. For each task, the final submission score will be determined by calculating the average score of the three models involved. </p>
+
+<p style="text-align: justify;">
+<b> 2. Training from Scratch Challenge:</b> teams are challenged to train language models from scratch without utilizing any pre-trained LLMs. There are no constraints on model architectures, training procedures, or duration, as long as the final models can run on a smartphone device with 12GB memory. Participants are free to design their architectures or utilize existing LLM architectures for this task. However, there is a restriction on the training data: only the C4 and Alpaca datasets are permitted for training and fine-tuning.</p>
+
+<p style="text-align: justify;">
+<b>Please note that quantization methods are not allowed</b> since 8-bit or 4-bit quantization for LLMs is a well-established technique. Participants must submit models in FP16 or FP32 format.
+</p>
+
+<h1 id="submission">Submission</h1>
+<p style="text-align: justify;">
+To participate in the challenge, you need to submit your entry by filling out a form. The form requires you to provide a link to your GitHub repository where your code is hosted. Additionally, you should <b> add our repository <i> edge-llms-challenge</i> as a collaborator on your repository</b>. This will allow us to access and review your code.</p>
+
+<p>Here are the steps to complete the submission:</p>
+
+<ol>
+  <li>Create a GitHub repository for your project.</li>
+  <li>Add your code to the repository, including the source code for pre-training or compression, model definition files, configuration files, and a CSV file containing evaluated results that are evaluated locally.</li>
+  <li>A .txt file containing Google Drive links to download model checkpoints and the compiled model for building Android APP.</li>
+  <li>Fill out the <a href="https://forms.gle/S367FfxUDcjSKz1Q9">submission form</a> with the required information, including the link to your GitHub repository.</li>
+  <li>Add the edge-llm-challenge repository as a collaborator on your repository and meanwhile make your repository as private.</li>
+  <li>Submit the form to complete your entry.</li>
+</ol>
+
+<p>Please, refer to this <a href="https://github.com/TianjinYellow/EdgeDeviceLLMCompetition-Starting-Kit?tab=readme-ov-file#submission-requirements">link</a> for more details about the submission.</p>
+
+<p>By following these steps, you will have successfully submitted your entry for the challenge. Good luck!</p>
+
+<h1 id="evaluation">Evaluation</h1>
+
+<p>The evaluation process in our competition will include two stages.</p>
+
+<p style="text-align: justify;"> <b>The first stage:</b> the submitted models will be evaluated on a diverse subset of the OpenCompass benchmark, including CSQA, BIG-Bench Hard, GSM8K, LongBench, HumanEval, TruthfulQA, CHID, along with a set of secret holdout tasks to avoid overfitting. A self-contained code base will be provided to facilitate participants in easily evaluating their models on seven diverse tasks via the OpenCompass benchmark. </p>
+
+<ul>
+  <li>
+    <p style="text-align: justify;"> Each submission will be ranked individually for each task, with the top 10 submissions with the highest score per task receiving scores from 10 to 1. The score of each task is calculated as the average score of the three models for the first track. For the second track, the score is the score of the submitted model. </p>
+  </li>
+  <li>
+    <p style="text-align: justify;"> We will measure the models' throughput on a smartphone platform provided by the sponsor. Submissions will be ranked based on throughput. To emphasize the importance of inference speed, the score for the throughput task will be <b>doubled</b>, ranging from 20 to 2 for the top 10 submissions. To assist participants in improving the speed of their models, we will provide an easy-to-run pipeline to measure throughput on a GPU, where the throughput values are roughly scaled to those on the smartphone platform.</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"> We will measure the inference memory usage of all models. Submissions with models that exceed 12GB of memory usage for inference will be disqualified.</p>
+  </li>
+  <li>
+    <p style="text-align: justify;"> The final rank of submissions will be determined by the sum of scores across all evaluation tasks including seven diverse tasks as shown in the Table below (100 scores in total), maximum 70 scores, one secret holdout task (maximum 10 scores), and the throughput measurement (maximum 20 scores). </p>
+  </li>
+</ul>
+
+<p style="text-align: justify;"> The top 15 teams with the highest scores will be displayed on the leaderboard. Participants are required to submit their source codes, evaluation log files, and models to the organizers (Check <i>Submission</i> section for details). </p>
+
+<p style="text-align: justify;">Participating teams are encouraged to submit their models for a preliminary review on the 25th of August to identify potential bugs and format issues, ensuring that the final submissions are in the correct format. Each team can make three submissions to each track after the deadline of the preliminary review. The best-performing model will be used to rank the team on the leaderboard and selected for the final model evaluation.</p>
+
+<p style="text-align: justify;"> <b>The second stage:</b>  After the competition is closed on October 25th, 2024, we will contact the top 3 teams with the highest scores in both tracks, requesting that they submit all necessary code and data to reproduce their results. We will then replicate their entire process, to ensure it is fully repeatable and the final model can be run on a smartphone with 12 GB RAM with the same results. If the top-scoring model cannot be reproduced under these imposed conditions or can not fit the smartphone, we will move on to consider the next highest-scoring submission in the category, until a reproducible and high-performing submission is selected. </p>
+
+<p style="text-align: justify;"> Our evaluation will leverage an extensive array of rigorously curated datasets across multiple fundamental dimensions: language comprehension, knowledge precision, logical deduction, mathematical problem-solving, programming proficiency, extended text analysis, and intelligent agent engagement. Details of the evaluation tasks we chose are shown below: </p>
+
+<h2 id="evaluation-datasets">Evaluation datasets</h2>
+
+<table class="foo">
+    <tr>
+        <td width="50%"><b>Dataset</b></td>
+        <td width="50%"><b>Dimension</b></td>
+        <td width="100%"><b>Source</b></td>
+    </tr>
+    <tr>
+        <td width="50%">CommonsenseQA</td>
+        <td width="50%">Knowledge</td>
+         <td width="100%"><a href="https://www.tau-nlp.sites.tau.ac.il/commonsenseqa">https://www.tau-nlp.sites.tau.ac.il/commonsenseqa</a></td>
+    </tr>
+    <tr>
+        <td width="50%">BIG-Bench Hard</td>
+        <td width="50%">Reasoning</td>
+         <td width="100%"><a href="https://github.com/suzgunmirac/BIG-Bench-Hard">https://github.com/suzgunmirac/BIG-Bench-Hard</a></td>
+    </tr>
+    <tr>
+        <td width="50%">GSM8K</td>
+        <td width="50%">Math</td>
+         <td width="100%"><a href="https://github.com/openai/grade-school-math">https://github.com/openai/grade-school-math</a></td>
+    </tr>
+    <tr>
+        <td width="50%">LongBench</td>
+        <td width="50%">Long-Context</td>
+         <td width="100%"><a href="https://github.com/THUDM/LongBench">https://github.com/THUDM/LongBench</a></td>
+    </tr>
+    <tr>
+        <td width="50%">HumanEval</td>
+        <td width="50%">Programming</td>
+        <td width="100%"><a href="https://github.com/openai/human-eval">https://github.com/openai/human-eval</a></td>
+    </tr>
+    <tr>
+        <td width="50%">TruthfulQA</td>
+        <td width="50%">Knowledge</td>
+         <td width="100%"><a href="https://github.com/sylinrl/TruthfulQA">https://github.com/sylinrl/TruthfulQA</a></td>
+    </tr>
+    <tr>
+        <td width="50%">CHID</td>
+        <td width="50%">Language</td>
+         <td width="100%"><a href="https://github.com/chujiezheng/ChID-Dataset">https://github.com/chujiezheng/ChID-Dataset</a></td>
+    </tr>
+</table>
+
+<h1 id="metrics">Metrics</h1>
+
+<p style="text-align: justify;">
+
+To comprehensively evaluate submissions, we will employ a set of rigorously curated metrics, which include:
+</p>
+
+<ul>
+  <li>
+    <p><b>Performance Score:</b> One of our primary scoring metrics is the performance score on the selected evaluation task. Each submission will be ranked individually for each task based on the performance score, with the top 10 submissions per task receiving scores from 10 to 1. The final score of the submission is calculated as the sum across all evaluation tasks.</p>
+  </li>
+  <li>
+    <p><b>Memory Requirement:</b> The memory footprint during inference is a crucial metric for real-life edge devices. To qualify, the peak memory usage of all models must be less than 12GB.</p>
+  </li>
+  <li>
+    <p><b>Throughput:</b> The throughput of an LLM typically refers to the rate at which the model can process input data and generate output tokens. It is often measured in terms of tokens per second. Throughput is a critical metric for evaluating the efficiency and performance of LLMs, especially in real-time or near-real-time applications where the speed of processing is crucial. Achieving high throughput implies that the model can handle large volumes of data quickly, making it suitable for tasks requiring rapid language processing, such as live chatbots, real-time translation, or speech recognition systems. This value will be measured on a smartphone with 12GB DRAM.</p>
+  </li>
+  <li>
+    <p><b>Parameter count:</b> Submissions should also include the model size, expressed as the parameter count, to represent the model’s dimensions. This metric is used for information only, not for ranking.</p>
+  </li>
+</ul>
+
+<h1 id="baseline-code-and-materials">Baseline, code, and materials</h1>
+
+<p style="text-align: justify;">
+The “starting kit” will be released to provide a starting point for people who are interested in our challenge before June 25th, 2024. This starting kit will provide detailed clarifications on what a submission looks like exactly, and how it will be evaluated and submitted. This starting kit will include an end-to-end submission flow, exemplified with a simple baseline:
+ </p>
+
+<ul>
+  <li>Loading a large language model choosing from <b>Phi-2, Llama3-8B, or Qwen-7B</b>.</li>
+  <li>Evaluating the pruned model on the OpenCompass benchmark. We will provide an easy-to-run pipeline for participants to evaluate their model on the subset of the OpenCompass benchmark. We will also provide a tool for measuring the throughput and GPU memory usage of a LLM.</li>
+  <li>Compile a model into a binary model library that can be run on android devices. We will provide a tool that can help participants easily deploy their LLMs on the smartphone platform.</li>
+</ul>
+
+<h1 id="datasets">Datasets</h1>
+
+<p style="text-align: justify;">
+This competition will not evaluate submissions based on the analysis of data. Our competition features two tracks: (1) post-training LLM compression for edge devices; and (2) training edge LLMs from scratch. We will allow participants to use and only use the C4 dataset and (Chinese) Alpaca for both tracks. The C4 dataset is a colossal, cleaned version of Common Crawl’s web crawl corpus, which is mainly intended to pre-train language models and word representations. Language models like MPT-7B and T5 are pre-trained with the C4 dataset. C4 is a large enough dataset that can make the competition interesting and draw conclusive and statistically significant results.  </p>
+
+<ul>
+  <li>
+    <p>The <b>C4 dataset</b> can be accessed through: <a href="https://huggingface.co/datasets/c4">C4 dataset</a>.</p>
+  </li>
+  <li>
+    <p>The Chinese version of <b>Alpaca</b> can be accessed through: <a href="https://huggingface.co/datasets/silk-road/alpaca-data-gpt4-chinese">Alpaca dataset</a>.</p>
+  </li>
+</ul>
+
+
+    <footer class="site-footer">
+      <hr>
+      <!-- 
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub
+                    Pages</a>.</span> -->
+    </footer>
+  </main>
+
+</body>
+
+</html>
