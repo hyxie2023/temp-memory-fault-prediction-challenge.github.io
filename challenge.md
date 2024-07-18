@@ -4,7 +4,7 @@ layout: default
 # Tracks
 
 <p style='text-align: justify;'>
-<b> 1. Compre2222ssion Challenge:</b> teams are tasked with developing their own compression methods to compress three pre-trained LLMs individually: Phi-2, Llama-3-8B, and Qwen-7B. Each model submitted must be capable of running on a smartphone device with 12 GB DRAM. Each model will be evaluated on a subset of the OpenCompass benchmark, which comprehensively assesses LLMs across multiple fundamental dimensions. For each task, the final submission score will be determined by calculating the average score of the three models involved. </p>
+<b> 1. Compression Challenge:</b> teams are tasked with developing their own compression methods to compress three pre-trained LLMs individually: Phi-2, Llama-3-8B, and Qwen-7B. Each model submitted must be capable of running on a smartphone device with 12 GB DRAM. Each model will be evaluated on a subset of the OpenCompass benchmark, which comprehensively assesses LLMs across multiple fundamental dimensions. For each task, the final submission score will be determined by calculating the average score of the three models involved. </p>
 
 <p style='text-align: justify;'>
 <b> 2. Training from Scratch Challenge:</b> teams are challenged to train language models from scratch without utilizing any pre-trained LLMs. There are no constraints on model architectures, training procedures, or duration, as long as the final models can run on a smartphone device with 12GB memory. Participants are free to design their architectures or utilize existing LLM architectures for this task. However, there is a restriction on the training data: only the C4 and Alpaca datasets are permitted for training and fine-tuning.</p>
