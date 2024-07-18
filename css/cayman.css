@@ -353,6 +353,8 @@ a:hover {
 .page-header {
   text-align: center;
   background-image: url('../assets/mount_image.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 64em) {
